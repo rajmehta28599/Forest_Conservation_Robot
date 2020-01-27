@@ -1,0 +1,87 @@
+<!--
+*
+* Project Name: 	Forest Conservation Robot(e-Yantra 						Project)
+* Author List: 		Mehta Raj Vinodbhai
+			Purohit Mahima
+* Filename: 		main.html(python file)
+* Functions: 		<head>,<body>
+* Global Variables:	none
+-->
+
+<!DOCTYPE html>
+<!--
+* Function Name:	<head>
+* Input:		none
+* Output:		style of the page and title Robo_Control
+* Logic: 		button,page style with attributes like backgraoundcolor,color,etc
+* Example Call:		
+-->
+
+   <head>
+      <title>Robo_Control</title>
+      <style>
+	.button {
+	  background-color: #4CAF50;
+	  border: none;
+	  color: white;
+	  padding: 15px 25px;
+	  text-align: center;
+	  font-size: 16px;
+	  cursor: pointer;
+	}
+
+	.button:hover {
+	  background-color:lightblue;
+	}
+
+      </style>
+   </head>
+<!--
+* Function Name:	<bodt>
+* Input:		click event
+* Output:		fire the url to the webserver using href tag
+* Logic: 		main execution of the web control page to the event to call the webserver action
+* Example Call:		
+-->
+
+   <body>
+	<div style="text-align:center">
+	<span style="display:inline-block;padding:5px;border:1px solid #fc0; font-size: 140%;font-weight: bold;">
+	<h2> Forest Conservation Robot </h2>
+	
+	<iframe width="560" height="250" src="https://www.youtube.com/embed/JRSTAyes50c" autoplay;></iframe>
+	<h3>Fire != {{button}} aleart</h3>	
+	<a href="/ledRed/on" class="button">TURN ON LED</a>  
+	<img hspace="20" style="padding-left: 100px">
+	<a href="/ledRed/off"class="button">TURN OFF LED</a>
+	<br><br>
+	<a href="/forward/forward" class="button">Forward</a>
+	<br><br><br>
+	<img hspace="10" style="padding-left: 5px">
+	<a href="/left/left" class="button">Left</a>
+	<img hspace="20" style="padding-left: 10px">
+	<a href="/stop/stop" class="button">Stop</a>
+	<img hspace="20" style="padding-left: 10px">
+	<a href="/right/right" class="button">Right</a>
+	<img hspace="10" style="padding-left: 5px">
+	<br><br><br>
+	<a href="/backward/backward" class="button">Backward</a>
+
+	<br>
+
+	<p>Motor speed control</p>
+	<img hspace="5" style="padding-left: 20px">
+	<a href="/decrease/decrease" class="button">--</a>
+	<img hspace="10" style="padding-left: 20px">
+	<a href="/enablei2c/on" class="button">Automation</a>
+	<img hspace="10" style="padding-left: 20px">
+	<a href="/enablei2c/off" class="button">Mannual</a>
+	<img hspace="10" style="padding-left: 20px">
+	<a href="/increase/increase" class="button">++</a>
+	<img hspace="5" style="padding-left: 5px">
+	<br><br>
+	</span>
+	</div>	
+</body>
+</html>
+
